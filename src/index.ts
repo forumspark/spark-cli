@@ -5,7 +5,7 @@ import ThemeInitCommand from "./commands/ThemeInitCommand.js";
 import ThemeAuthCommand from "./commands/ThemeAuthCommand.js";
 import ThemeDevCommand from "./commands/ThemeDevCommand.js";
 
-program.version("0.0.4").description("ForumSpark Theme Dev Kit");
+program.version("0.0.5").description("ForumSpark Theme Dev Kit");
 
 program.command("theme:init").action(() => {
   ThemeInitCommand().then();

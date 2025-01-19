@@ -15,7 +15,12 @@ export default async () => {
   );
 
   chokidar
-    .watch(config.build_dir, { ignoreInitial: true })
+    .watch(config.build_dir, {
+      ignoreInitial: true,
+      awaitWriteFinish: {
+        stabilityThreshold: 500,
+      },
+    })
     .on("all", async (event, filePath) => {
       if (basename(filePath) === "theme.css") {
         const spinner = ora(`Synchronising theme stylesheet...`).start();
