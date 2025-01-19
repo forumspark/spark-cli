@@ -1,6 +1,6 @@
 {
   "name": "forumspark-spark-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ForumSpark theme development tool",
   "main": "dist/index.js",
   "scripts": {
