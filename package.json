@@ -19,8 +19,7 @@
     "chokidar": "^4.0.3",
     "commander": "^13.0.0",
     "inquirer": "^12.3.2",
-    "ora": "^8.1.1",
-    "tsc": "^2.0.4"
+    "ora": "^8.1.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.7",
