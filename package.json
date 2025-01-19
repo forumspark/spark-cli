@@ -1,10 +1,12 @@
 {
-  "name": "fs-spark",
-  "version": "1.0.0",
+  "name": "forumspark-spark-cli",
+  "version": "0.0.0",
   "description": "ForumSpark theme development tool",
   "main": "dist/index.js",
   "scripts": {
-  "build": "rm -rf dist && tsc && chmod +x ./dist/index.js"
+    "build": "rm -rf dist && tsc && chmod +x ./dist/index.js",
+    "prepublishOnly": "node prepublish.js && tsc",
+    "release": "cross-env RELEASE_MODE=true np --no-tests"
   },
   "type": "module",
   "bin": {
@@ -22,6 +24,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.7",
+    "cross-env": "^7.0.3",
+    "np": "^10.1.0",
     "typescript": "^5.7.3"
   }
 }
