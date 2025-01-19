@@ -1,0 +1,27 @@
+{
+  "name": "fs-spark",
+  "version": "1.0.0",
+  "description": "ForumSpark theme development tool",
+  "main": "dist/index.js",
+  "scripts": {
+  "build": "rm -rf dist && tsc && chmod +x ./dist/index.js"
+  },
+  "type": "module",
+  "bin": {
+    "spark-cli": "./dist/index.js"
+  },
+  "author": "Jamie Watson",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "chokidar": "^4.0.3",
+    "commander": "^13.0.0",
+    "inquirer": "^12.3.2",
+    "ora": "^8.1.1",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3"
+  }
+}
